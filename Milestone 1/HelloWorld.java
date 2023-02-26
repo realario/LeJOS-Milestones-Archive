@@ -8,13 +8,13 @@ import lejos.utility.Delay;
 public class HelloWorld {
 
 	public static void main(String[] args) {
-		Button.LEDPattern(4); // Start the LEDs flashing Green
+		Button.LEDPattern(4); // Start the LEDs (flashing green)
 		Sound.beepSequenceUp();
 		LCD.clear();
 		LCD.drawString("HOLY ", 2, 2);
 		Delay.msDelay(1000);
-		LCD.drawString(" SMOKE", 2, 3);
-		Delay.msDelay(1000); //Extra Test
+		LCD.drawString("SMOKE", 2, 3);
+		Delay.msDelay(1000); //Additional delay, so second word can actually be read...
 
 	}
 
